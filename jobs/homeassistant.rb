@@ -285,7 +285,7 @@ SCHEDULER.every '15m', :first_in => 0 do |job|
 	response = ha_api("states/sensor.pws_relative_humidity", "get")
 	humidity = response["state"]
 
-	response = ha_api("states/sensor.sensor.pws_precip_today_metric", "get")
+	response = ha_api("states/sensor.pws_precip_today_metric", "get")
 	precipintensity = response["state"]
 
 	response = ha_api("states/sensor.pws_wind_kph", "get")
